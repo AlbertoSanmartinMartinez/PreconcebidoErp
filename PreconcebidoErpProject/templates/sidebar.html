@@ -2,7 +2,7 @@
   <div class="left_col scroll-view">
 
     <div class="navbar nav_title" style="border: 0;">
-      <a href="index.html" class="site_title"><span>Preconcebido ERP</span></a>
+      <a href="{% url 'home' %}" class="site_title"><span>Preconcebido ERP</span></a>
     </div>
     <div class="clearfix"></div>
 
@@ -24,6 +24,7 @@
         <ul class="nav side-menu">
           <li><a><i class="fa fa-home"></i> General <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
+              <li><a href="{% url 'home' %}">Inicio</a></li>
               <li><a href="index.html">Clientes</a></li>
               <li><a href="index2.html">Proveedores</a></li>
               <li><a href="index2.html">Otro</a></li>
@@ -144,33 +145,17 @@
 
           <li><a><i class="fa fa-bar-chart-o"></i> Marketing <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="#level1_1">E-Mailing</a>
-              <li><a>Level two<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                  <li><a href="#level2_1">Redes Sociales</a>
-                  </li>
-                  <li><a href="#level2_2">Sub Level Two</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#level1_2">Level Three</a>
+              <li><a href="#">E-mailing</a></li>
+              <li><a href="#">Redes Sociales</a>
               </li>
             </ul>
           </li>
 
           <li><a><i class="fa fa-desktop"></i> Página Web <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="#level1_1">Level One</a>
-              <li><a>Level two<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                  <li><a href="#level2_1">Sub Level One</a>
-                  </li>
-                  <li><a href="#level2_2">Sub Level Two</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#level1_2">Level Three</a>
-              </li>
+              <li><a href="#level1_1">Servidor</a></li>
+              <li><a href="#level1_2">Dominio</a></li>
+              <li><a href="#level1_2">Base de Datos</a></li>
             </ul>
           </li>
 

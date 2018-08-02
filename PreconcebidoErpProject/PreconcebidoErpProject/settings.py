@@ -25,7 +25,10 @@ SECRET_KEY = '@5!9&s3s5jhq45_j9no8d^179pjx@16g)&78j%ir1uxc6#aof6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.1.100',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'PreconcebidoErpProject.urls'
