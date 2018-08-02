@@ -25,7 +25,7 @@
           <li><a><i class="fa fa-home"></i> General <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
               <li><a href="{% url 'home' %}">Inicio</a></li>
-              <li><a href="index.html">Clientes</a></li>
+              <li><a href="{% url 'costumers' %}">Clientes</a></li>
               <li><a href="index2.html">Proveedores</a></li>
               <li><a href="index2.html">Otro</a></li>
             </ul>
@@ -33,17 +33,8 @@
 
           <li><a><i class="fa fa-file-text-o"></i> Facturación <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="#level1_1">Level One</a>
-              <li><a>Level two<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                  <li><a href="#level2_1">Sub Level One</a>
-                  </li>
-                  <li><a href="#level2_2">Sub Level Two</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#level1_2">Level Three</a>
-              </li>
+              <li><a href="#level1_1">Presupuestos</a></li>
+              <li><a href="#level1_2">Facturas</a></li>
             </ul>
           </li>
 
@@ -97,17 +88,15 @@
 
           <li><a><i class="fa fa-eur"></i> Tesoreria <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="#level1_1">Nominas</a>
-              <li><a>Convenios<span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                  <li><a href="#level2_1">Sub Level One</a>
-                  </li>
-                  <li><a href="#level2_2">Sub Level Two</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#level1_2">Level Three</a>
-              </li>
+              <li><a href="#level1_1">Nominas</a></li>
+              <li><a>Convenios<span class="fa fa-chevron-down"></span></a></li>
+              <li><a href="#level1_2">Level Three</a></li>
+              <li><a href="#level1_2">Level Three</a></li>
+              <li><a href="#level1_2">Level Three</a></li>
+              <li><a href="#level1_2">Level Three</a></li>
+              <li><a href="#level1_2">Level Three</a></li>
+              <li><a href="#level1_2">Level Three</a></li>
+              <li><a href="#level1_2">Level Three</a></li>
             </ul>
           </li>
 
@@ -124,6 +113,13 @@
               </li>
               <li><a href="#level1_2">Level Three</a>
               </li>
+            </ul>
+          </li>
+
+          <li><a><i class="fa fa-cubes"></i>Almacen<span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+              <li><a href="#level1_1">Inventario</a></li>
+              <li><a href="#level1_2">Existencias</a></li>
             </ul>
           </li>
 
@@ -151,6 +147,14 @@
             </ul>
           </li>
 
+          <li><a><i class="fa fa-users"></i> Recursos Humanos <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+              <li><a href="#">Puestos</a></li>
+              <li><a href="#">Candidatos</a></li>
+              <li><a href="#">Procesos de Selección</a></li>
+            </ul>
+          </li>
+
           <li><a><i class="fa fa-desktop"></i> Página Web <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
               <li><a href="#level1_1">Servidor</a></li>
@@ -167,7 +171,7 @@
 
   <!-- Module Footer Menu Area -->
   <div class="sidebar-footer hidden-small">
-    <a data-toggle="tooltip" data-placement="top" title="Settings">
+    <a data-toggle="tooltip" data-placement="top" title="Ajustes" href="{% url 'settings' %}">
       <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
     </a>
     <a data-toggle="tooltip" data-placement="top" title="FullScreen">
@@ -176,7 +180,7 @@
     <a data-toggle="tooltip" data-placement="top" title="Lock">
       <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
     </a>
-    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+    <a data-toggle="tooltip" data-placement="top" title="Desconectar" href="{% url 'logout' %}">
       <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
     </a>
   </div>

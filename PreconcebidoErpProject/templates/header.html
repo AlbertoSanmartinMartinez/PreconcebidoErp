@@ -12,11 +12,9 @@
           <span class=" fa fa-angle-down"></span>
         </a>
         <ul class="dropdown-menu dropdown-usermenu pull-right">
-          <li><a href="#"><i class="fa fa-user pull-right"></i> Perfil</a></li>
-          <li><a href="#"><i class="fa fa-question pull-right"></i> Ayuda</a></li>
-              <!--<span class="badge bg-red pull-right">50%</span>
-              <span>Settings</span>-->
-          <!--<li><a href="javascript:;">Help</a></li>-->
+          <li><a href="{% url 'profile' %}"><i class="fa fa-user pull-right"></i> Perfil</a></li>
+          <li><a href="{% url 'calendar' %}"><i class="fa fa-calendar pull-right"></i> Calendario</a></li>
+          <li><a href="{% url 'help' %}"><i class="fa fa-question pull-right"></i> Ayuda</a></li>
           <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out pull-right"></i> Desconectar</a></li>
         </ul>
       </li>
@@ -78,8 +76,8 @@
           </li>
           <li>
             <div class="text-center">
-              <a>
-                <strong>See All Alerts</strong>
+              <a href="{% url 'messages' %}">
+                <strong>Ver todos los mensajes</strong>
                 <i class="fa fa-angle-right"></i>
               </a>
             </div>
@@ -145,7 +143,7 @@
           <li>
             <div class="text-center">
               <a>
-                <strong>See All Alerts</strong>
+                <strong>Ver todas las alertas</strong>
                 <i class="fa fa-angle-right"></i>
               </a>
             </div>

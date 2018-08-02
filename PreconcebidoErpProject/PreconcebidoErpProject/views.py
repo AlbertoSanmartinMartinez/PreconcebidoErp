@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from PreconcebidoErpProject import forms as general_forms
 
 # General views
-#@login_required(redirect_field_name='custom_login')
+@login_required(redirect_field_name='login')
 def home(request):
     """
     """
@@ -56,13 +56,55 @@ def custom_register(request):
     })
 
 
+@login_required(redirect_field_name='login')
+def profile(request):
+    """
+    """
+
+    return render(request, 'profile.html', {})
+
+
+@login_required(redirect_field_name='login')
+def help(request):
+    """
+    """
+
+    return render(request, 'help.html', {})
+
+
+@login_required(redirect_field_name='login')
+def calendar(request):
+    """
+    """
+
+    return render(request, 'calendar.html', {})
+
+
+@login_required(redirect_field_name='login')
+def settings(request):
+    """
+    """
+
+    return render(request, 'settings.html', {})
+
+
+@login_required(redirect_field_name='login')
+def costumers(request):
+    """
+    """
+
+    return render(request, 'costumers.html', {})
+
+
+@login_required(redirect_field_name='login')
+def messages(request):
+    """
+    """
+
+    return render(request, 'messages.html', {})
+
+
+
+
+
 # Common Functions
-
-
-
-
-
-
-
-
-#
