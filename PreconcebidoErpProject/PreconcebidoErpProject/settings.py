@@ -78,13 +78,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'PreconcebidoErpProject.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+# DATABASE
+# https://nesdis.github.io/djongo/integrating-django-with-mongodb/
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'ErpNoSqlDatabase',
+        'HOST': '127.0.0.1',
+        'PORT': 27017,
+        #'USER': '',
+        #'PASSWORD': '',
     }
 }
 

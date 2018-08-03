@@ -1,0 +1,12 @@
+dataclasses==0.6
+Django==2.1
+djongo==1.2.29
+mongoengine==0.15.3
+nltk==3.3
+Pillow==5.1.0
+pymongo==3.7.1
+PyPDF2==1.26.0
+pytesseract==0.2.0
+pytz==2018.4
+six==1.11.0
+sqlparse==0.2.4
